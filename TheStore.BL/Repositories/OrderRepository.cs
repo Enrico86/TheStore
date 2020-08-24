@@ -20,7 +20,7 @@ namespace TheStore.BL.Repositories
         }
 
         //Obtener un pedido por su id
-        public Order GetOrders(int id)
+        public Order GetOrder(int id)
         {
             return new Order();
 

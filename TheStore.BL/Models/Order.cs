@@ -8,7 +8,9 @@ namespace TheStore.BL.Models
     {
         public int Id { get; set; }
         public DateTimeOffset OrderDate { get; set; }
-
+        public List<OrderDetail> OrderItems { get; set; }
+        public Address ShipAddress { get; set; }
+        public Customer Customer { get; set; }
 
     }
 }
