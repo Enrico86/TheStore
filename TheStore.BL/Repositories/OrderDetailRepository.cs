@@ -7,29 +7,39 @@ namespace TheStore.BL.Repositories
 {
     public class OrderDetailRepository
     {
+        private List<OrderDetail> OrderDetails = new List<OrderDetail>();
+        private ProductRepository productRepository = new ProductRepository();
+
         //Guardar un detalle (línea) de un pedido
-        public bool Save(OrderDetail detail)
+        public bool InsertOrderDetail(OrderDetail newOrderDetail)
         {
+            OrderDetails.Insert(OrderDetails.Count, newOrderDetail);
             return true;
         }
 
-        //Obtener todos los detalles (líneas) de un pedido
-        public List<OrderDetail> GetDetails()
-        {
-            return new List<OrderDetail>();
-        }
 
-        //Obtener un detalle (línea) por su id
-        public OrderDetail GetDetail(int id)
+        //Obtener los detalles de un pedido según el id del pedido
+        public List<OrderDetail> GetDetailsByOrderId(int orderId)
         {
-            return new OrderDetail();
+            OrderDetails = new List<OrderDetail>()
+            {
+                new OrderDetail()
+                {
+                    Id=1,
+                    Product= productRepository.GetProductById(1),
+                    PurchasePrice=1.25m,
+                    Quantity=2
+                },
+                new OrderDetail
+                {
+                    Id=2,
+                    Product=productRepository.GetProductById(2),
+                    PurchasePrice=2.5m,
+                    Quantity=1
+                }
+            };
+            return OrderDetails;
 
-        }
-
-        //Eliminar un detalle (línea) por su id
-        public bool DeleteDetail(int id)
-        {
-            return true;
         }
     }
 }

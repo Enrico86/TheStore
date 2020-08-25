@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using TheStore.BL.Models;
 
@@ -7,29 +9,37 @@ namespace TheStore.BL.Repositories
 {
     public class ProductRepository
     {
+        private List<Product> ProductsData = new List<Product>();
+
         //Guardar
-        public bool Save(Product product)
+        public bool Save(Product newProduct)
         {
+            ProductsData.Insert(ProductsData.Count, newProduct);
             return true;
         }
 
         //Obtener todos los productos
         public List<Product> GetProducts()
         {
-            return new List<Product>();
+            return ProductsData;
         }
 
         //Obtener un producto por su id
-        public Product GetProduct(int id)
+        public Product GetProductById(int productId)
         {
-            return new Product();
-
+            return ProductsData.FirstOrDefault(p=>p.Id==productId);
         }
 
         //Eliminar un producto por su id
-        public bool DeleteProduct(int id)
+        public bool DeleteProduct(int productId)
         {
-            return true;
+            var productToDelete = GetProductById(productId);
+            if (productToDelete!=null)
+            {
+                ProductsData.Remove(productToDelete);
+                return true;
+            }
+            return false;
         }
     }
 }
