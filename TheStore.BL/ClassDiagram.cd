@@ -1,58 +1,86 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="TheStore.BL.Models.Address" Collapsed="true">
-    <Position X="3" Y="0.75" Width="1.5" />
+  <Class Name="TheStore.BL.Models.Address">
+    <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAIIAAAAAAAAAIAAAAgAAAARAAAAAA=</HashCode>
       <FileName>Models\Address.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheStore.BL.Models.Customer" Collapsed="true">
-    <Position X="4.75" Y="0.75" Width="1.5" />
+  <Class Name="TheStore.BL.Models.Customer">
+    <Position X="2.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAACAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AABCAAAAACAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheStore.BL.Models.Order" Collapsed="true">
-    <Position X="3" Y="1.75" Width="1.5" />
+  <Class Name="TheStore.BL.Models.GoldCustomer">
+    <Position X="1" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Models\GoldCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheStore.BL.Models.Order">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAAAAEAAAAAAAQAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Order.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheStore.BL.Models.OrderDetail" Collapsed="true">
-    <Position X="4.75" Y="1.75" Width="1.5" />
+  <Class Name="TheStore.BL.Models.OrderDetail">
+    <Position X="9.25" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAIAAAAAAAAAgAABAAAAAAAAAAAEAgAAAgAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Models\OrderDetail.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheStore.BL.Models.Product" Collapsed="true">
-    <Position X="3" Y="2.75" Width="1.5" />
+  <Class Name="TheStore.BL.Models.Product">
+    <Position X="7.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAQAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Product.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheStore.BL.Repositories.CustomerRepository" Collapsed="true">
-    <Position X="6.5" Y="0.75" Width="1.5" />
+  <Class Name="TheStore.BL.Models.SilverCustomer">
+    <Position X="3.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\SilverCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheStore.BL.Repositories.AddressRepository">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Repositories\AddressRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheStore.BL.Repositories.CustomerRepository">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIBAAAAAQAAABAAAAAAAAAAAAAAAAAAEAAABAAA=</HashCode>
       <FileName>Repositories\CustomerRepository.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheStore.BL.Repositories.OrderRepository" Collapsed="true">
-    <Position X="6.5" Y="1.75" Width="1.5" />
+  <Class Name="TheStore.BL.Repositories.OrderDetailRepository">
+    <Position X="11" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAQAQAAAAAAAAABAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\OrderDetailRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheStore.BL.Repositories.OrderRepository">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAYAAAEAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAAAA=</HashCode>
       <FileName>Repositories\OrderRepository.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheStore.BL.Repositories.ProductRepository" Collapsed="true">
-    <Position X="4.75" Y="2.75" Width="1.5" />
+  <Class Name="TheStore.BL.Repositories.ProductRepository">
+    <Position X="9.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAAAAAAAAAAAAAAAgAAAAAAAAAQAAACAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAAAAIAAAAAAAAAAgAAAAAAAAAQAAAAAAAAQA=</HashCode>
       <FileName>Repositories\ProductRepository.cs</FileName>
     </TypeIdentifier>
   </Class>
