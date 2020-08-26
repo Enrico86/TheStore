@@ -56,12 +56,13 @@
       <FileName>Repositories\AddressRepository.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheStore.BL.Repositories.CustomerRepository">
+  <Class Name="TheStore.BL.Repositories.CustomerRepositoryList">
     <Position X="0.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIBAAAAAQAAABAAAAAAAAAAAAAAAAAAEAAABAAA=</HashCode>
-      <FileName>Repositories\CustomerRepository.cs</FileName>
+      <HashCode>AAAAAIBAAAAAQAAAAAAAAAAAAAEAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Repositories\CustomerRepositoryList.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="TheStore.BL.Repositories.OrderDetailRepository">
     <Position X="11" Y="3" Width="1.5" />

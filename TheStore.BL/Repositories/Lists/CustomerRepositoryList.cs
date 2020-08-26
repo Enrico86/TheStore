@@ -5,10 +5,11 @@ using System.Net.Http.Headers;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using TheStore.BL.Models;
+using TheStore.BL.Services;
 
 namespace TheStore.BL.Repositories
 {
-    public class CustomerRepository
+    public class CustomerRepositoryList:ICustomerRepository
     {
         private List<Customer> CustomersData = new List<Customer>();
         private AddressRepository addressRepository = new AddressRepository();
@@ -29,7 +30,7 @@ namespace TheStore.BL.Repositories
         }
 
         //Obtener todos los clientes con sus direcciones
-        public List<Customer> GetCustomers()
+        public List<Customer> GetAll()
         {
             foreach (var customer in CustomersData)
             {
@@ -39,7 +40,7 @@ namespace TheStore.BL.Repositories
         }
 
         //Obtener un cliente por su id
-        public Customer GetCustomerById(int id)
+        public Customer GetById(int id)
         {
             Customer customer = new Customer();
             customer = CustomersData.FirstOrDefault(c => c.Id == id);
@@ -49,9 +50,9 @@ namespace TheStore.BL.Repositories
         }
 
         //Eliminar un cliente por su id
-        public bool DeleteCustomer(int customerId)
+        public bool Delete(int customerId)
         {
-            var customerToDelete = GetCustomerById(customerId);
+            var customerToDelete = GetById(customerId);
             if (customerToDelete!=null)
             { 
             CustomersData.Remove(customerToDelete);
